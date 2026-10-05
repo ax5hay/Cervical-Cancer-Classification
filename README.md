@@ -8,7 +8,7 @@
 Supervised machine-learning classification of **cervical-cancer risk** from the Kaggle
 [Cervical Cancer Risk Factors](https://www.kaggle.com/datasets/loveall/cervical-cancer-risk-classification)
 dataset (UCI). The data mixes demographics, sexual/medical history, and diagnostic test results
-(Hinselmann, Schiller, cytology, biopsy) — the kind of messy clinical table that needs real
+(Hinselmann, Schiller, cytology, biopsy): the kind of messy clinical table that needs real
 cleaning before any model will behave.
 
 ## What's inside
@@ -20,10 +20,10 @@ cleaning before any model will behave.
 
 ## Pipeline
 
-1. **Clean** — the raw file encodes missing values as `?`; coerce to numeric, impute, and drop uninformative columns.
-2. **Explore** — class balance, feature distributions, and correlation with the target.
-3. **Model** — train and compare classifiers on the risk features, with attention to the heavy class imbalance.
-4. **Evaluate** — accuracy alongside precision / recall / ROC-AUC, since a false negative matters far more than a false positive here.
+1. **Clean**: the raw file encodes missing values as `?`; coerce to numeric, impute, and drop uninformative columns.
+2. **Explore**: class balance, feature distributions, and correlation with the target.
+3. **Model**: train and compare classifiers on the risk features, with attention to the heavy class imbalance.
+4. **Evaluate**: accuracy alongside precision / recall / ROC-AUC, since a false negative matters far more than a false positive here.
 
 ## Run it
 
@@ -32,4 +32,4 @@ pip install scikit-learn pandas numpy matplotlib seaborn
 jupyter notebook cervical-cancer-classification.ipynb
 ```
 
-> Learning / research project on public data — not a diagnostic tool. See the notebook for the models compared and their measured scores.
+> Learning / research project on public data: not a diagnostic tool. See the notebook for the models compared and their measured scores.
